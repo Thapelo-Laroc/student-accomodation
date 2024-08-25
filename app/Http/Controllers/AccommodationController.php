@@ -45,4 +45,11 @@ class AccommodationController extends Controller
         $accommodations = Accommodation::with('images')->get();
         return view('accommodations.index', compact('accommodations'));
     }
+
+    public function show($id)
+{
+    $accommodation = Accommodation::with('images')->findOrFail($id);
+    return view('accommodations.show', compact('accommodation'));
+}
+
 }

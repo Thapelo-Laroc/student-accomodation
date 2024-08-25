@@ -219,21 +219,13 @@
                         <span class="align-middle">My Profile</span>
                       </a>
                     </li>
-                    {{-- <li>
+                     <li>
                       <a class="dropdown-item" href="#">
                         <i class="bx bx-cog me-2"></i>
                         <span class="align-middle">Settings</span>
                       </a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle ms-1">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li> --}}
+                    
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
@@ -273,9 +265,8 @@
                           <p class="mb-6">
                             Everything you need on student accommodation is here.
                           </p>
-
-                          <!-- <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a> -->
-                          <a href="{{ route('accommodations.index') }}">View Accommodations</a>
+                          <a href="{{ route('accommodations.index') }}" class="btn btn-sm btn-outline-primary">View Accommodations</a>
+                          
                         </div>
                       </div>
                       <div class="col-sm-5 text-center text-sm-left">

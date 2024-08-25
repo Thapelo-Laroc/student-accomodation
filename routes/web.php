@@ -65,6 +65,8 @@ Route::middleware(['auth', 'role:super_admin,student'])->group(function () {
     Route::get('/accommodations', [AccommodationController::class, 'index'])->name('accommodations.index');
 });
 
+route::get('/accommodations/{id}', [AccommodationController::class, 'show'])->name('accommodations.show');
+
 
 
 require __DIR__.'/auth.php';
